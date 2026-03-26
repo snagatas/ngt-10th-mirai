@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ゲストトーク — 挑戦する人たちの声</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ---- Hero ---- */
+    .hero {
+      position: relative;
+      height: 420px;
+      background: linear-gradient(135deg, #1a3318 0%, #2d5a27 40%, #4a8a42 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 20% 80%, rgba(255,255,255,0.06) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 20%, rgba(255,255,255,0.04) 0%, transparent 50%);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      animation: fadeInUp 0.8s ease;
+    }
+
+    .hero-label {
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      opacity: 0.7;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 {
+      font-family: var(--font-serif);
+      font-size: 2.4rem;
+      font-weight: 700;
+      line-height: 1.5;
+      letter-spacing: 0.06em;
+      margin-bottom: 16px;
+    }
+
+    .hero-sub {
+      font-size: 0.92rem;
+      font-weight: 300;
+      opacity: 0.8;
+      line-height: 1.8;
+      max-width: 520px;
+    }
+
+    /* ---- Section Intro ---- */
+    .section-intro {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 56px 32px 40px;
+      text-align: center;
+    }
+
+    .section-intro h2 {
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: var(--color-text);
+    }
+
+    .section-intro p {
+      font-size: 0.88rem;
+      color: var(--color-text-secondary);
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.9;
+    }
+
+    /* ---- Card Grid ---- */
+    .card-grid {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 32px 64px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 28px;
+    }
+
+    .card {
+      background: var(--color-white);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+
+    .card-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      background: linear-gradient(135deg, #d4e4d2 0%, #b8cfb5 100%);
+    }
+
+    .card-body {
+      padding: 20px 24px 24px;
+    }
+
+    .card-date {
+      font-size: 0.72rem;
+      color: var(--color-text-light);
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+
+    .card-title {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      font-weight: 600;
+      line-height: 1.65;
+      margin-bottom: 12px;
+      color: var(--color-text);
+      transition: color var(--transition);
+    }
+
+    .card:hover .card-title {
+      color: var(--color-accent);
+    }
+
+    .card-excerpt {
+      font-size: 0.8rem;
+      color: var(--color-text-secondary);
+      line-height: 1.75;
+      margin-bottom: 14px;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    /* ---- Responsive ---- */
+    @media (max-width: 768px) {
+      .hero { height: 320px; }
+      .hero h1 { font-size: 1.6rem; }
+      .hero-sub { font-size: 0.82rem; padding: 0 20px; }
+      .section-intro { padding: 40px 16px 28px; }
+      .card-grid { padding: 0 16px 48px; grid-template-columns: 1fr; gap: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">Guest Talk <span>挑戦する人たちの声</span></a>
+      <ul class="header-nav">
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="#">カテゴリ</a></li>
+        <li><a href="#">タグ一覧</a></li>
+        <li><a href="#">お問い合わせ</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="hero-label">Guest Talk</p>
+      <h1>挑戦する人たちの声</h1>
+      <p class="hero-sub">それぞれの分野で挑戦を続ける11人のストーリー。<br>彼らの言葉から、新しい視点やヒントが見つかるかもしれません。</p>
+    </div>
+  </section>
+
+  <!-- Section Intro -->
+  <div class="section-intro">
+    <h2>インタビュー一覧</h2>
+    <p>社会課題の解決からテクノロジー、クリエイティブまで——多彩なフィールドで活躍するゲストたちの想いに迫ります。</p>
+  </div>
+
+  <!-- Card Grid -->
+  <div class="card-grid">
+
+    <a href="article01.html" class="card fade-in">
+      <div class="card-img" style="background: linear-gradient(135deg, #c8d8c6, #8fb38a);"></div>
+      <div class="card-body">
+        <p class="card-date">2026.03.01</p>
+        <h3 class="card-title">地域の食文化を次世代へ。若きシェフが描く「おいしい」の未来</h3>
+        <p class="card-excerpt">地元の食材にこだわり、伝統と革新を掛け合わせた料理で注目を集める28歳のシェフ。食を通じた地域活性化への想いを聞いた。</p>
+        <div class="tags">
+          <span class="tag">#食文化</span>
+          <span class="tag">#地域活性化</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="article02.html" class="card fade-in">
+      <div class="card-img" style="background: linear-gradient(135deg, #c6d0d8, #8a9fb3);"></div>
+      <div class="card-body">
+        <p class="card-date">2026.03.03</p>
+        <h3 class="card-title">AIと教育の交差点で。元教師のエンジニアが目指す「学びの民主化」</h3>
+        <p class="card-excerpt">教壇に立った経験を活かし、AI学習プラットフォームを開発する元教師。テクノロジーで教育格差に挑む彼女のビジョンとは。</p>
+        <div class="tags">
+          <span class="tag">#EdTech</span>
+          <span class="tag">#AI</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="article03.html" class="card fade-in">
+      <div class="card-img" style="background: linear-gradient(135deg, #d8d2c6, #b3a68a);"></div>
+      <div class="card-body">
+        <p class="card-date">2026.03.05</p>
+        <h3 class="card-title">伝統工芸×デザイン思考。漆器職人が世界市場で勝負する理由</h3>
+        <p class="card-excerpt">家業の漆器工房を継ぎながら、海外ブランドとのコラボを実現。伝統と現代デザインの融合で新たな価値を生み出す挑戦に迫る。</p>
+        <div class="tags">
+          <span class="tag">#伝統工芸</span>
+          <span class="tag">#デザイン</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="article04.html" class="card fade-in">
+      <div class="card-img" style="background: linear-gradient(135deg, #d8c6c6, #b38a8a);"></div>
+      <div class="card-body">
+        <p class="card-date">2026.03.07</p>
+        <h3 class="card-title">医療×スタートアップ。離島の医師がオンライン診療で変えたもの</h3>
+        <p class="card-excerpt">離島で地域医療に従事しながら、オンライン診療の仕組みを独自に構築。医師不足に立ち向かうドクターの挑戦を追う。</p>
+        <div class="tags">
+          <span class="tag">#医療</span>
+          <span class="tag">#スタートアップ</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="article05.html" class="card fade-in">
+      <div class="card-img" style="background: linear-gradient(135deg, #c6d8d4, #8ab3a8);"></div>
+      <div class="card-body">
+        <p class="card-date">2026.03.09</p>
+        <h3 class="card-title">「捨てない」を仕組みに。循環型ファッションブランドの挑戦</h3>
+        <p class="card-excerpt">廃棄される衣料品の問題に向き合い、リペア・リメイクを前提としたファッションブランドを立ち上げた25歳の起業家。</p>
+        <div class="tags">
+          <span class="tag">#サステナビリティ</span>
+          <span class="tag">#ファッション</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="article06.html" class="card fade-in">
+      <div class="card-img" style="background: linear-gradient(135deg, #d4c6d8, #a88ab3);"></div>
+      <div class="card-body">
+        <p class="card-date">2026.03.11</p>
+        <h3 class="card-title">音楽と福祉を結ぶ。障害者アートフェスを全国に広げるプロデューサー</h3>
+        <p class="card-excerpt">音楽業界出身のプロデューサーが、障害のあるアーティストの表現の場を全国に展開。インクルーシブな社会への挑戦。</p>
+        <div class="tags">
+          <span class="tag">#福祉</span>
+          <span class="tag">#アート</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="article07.html" class="card fade-in">
+      <div class="card-img" style="background: linear-gradient(135deg, #d8d8c6, #b3b38a);"></div>
+      <div class="card-body">
+        <p class="card-date">2026.03.13</p>
+        <h3 class="card-title">農業をかっこよく。ドローン×データで変わる家族経営の農園</h3>
+        <p class="card-excerpt">実家の農園をスマート農業で変革する30歳。ドローンとデータ分析を駆使し、次世代農業のモデルケースを目指す。</p>
+        <div class="tags">
+          <span class="tag">#農業</span>
+          <span class="tag">#テクノロジー</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="article08.html" class="card fade-in">
+      <div class="card-img" style="background: linear-gradient(135deg, #c6cdd8, #8a97b3);"></div>
+      <div class="card-body">
+        <p class="card-date">2026.03.15</p>
+        <h3 class="card-title">空き家を「まちの資源」に。建築家が仕掛けるリノベーション革命</h3>
+        <p class="card-excerpt">全国に増え続ける空き家を、コミュニティスペースやシェアオフィスに再生。建築家が描くまちづくりのビジョンとは。</p>
+        <div class="tags">
+          <span class="tag">#建築</span>
+          <span class="tag">#まちづくり</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="article09.html" class="card fade-in">
+      <div class="card-img" style="background: linear-gradient(135deg, #d8cec6, #b3a18a);"></div>
+      <div class="card-body">
+        <p class="card-date">2026.03.17</p>
+        <h3 class="card-title">子どもの「やりたい」を守る。フリースクール代表が考える教育の形</h3>
+        <p class="card-excerpt">不登校を経験した自身の過去を原点に、子どもたちが自分のペースで学べるフリースクールを運営する代表の想い。</p>
+        <div class="tags">
+          <span class="tag">#教育</span>
+          <span class="tag">#子ども</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="article10.html" class="card fade-in">
+      <div class="card-img" style="background: linear-gradient(135deg, #c6d8ce, #8ab3a0);"></div>
+      <div class="card-body">
+        <p class="card-date">2026.03.19</p>
+        <h3 class="card-title">海洋プラスチックから製品を。サーファー起業家の環境ビジネス</h3>
+        <p class="card-excerpt">サーフィンを愛するなかで海洋汚染の深刻さを知り、回収プラスチックを原料としたプロダクトブランドを立ち上げた起業家。</p>
+        <div class="tags">
+          <span class="tag">#環境</span>
+          <span class="tag">#起業</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="article11.html" class="card fade-in">
+      <div class="card-img" style="background: linear-gradient(135deg, #d2c6d8, #a08ab3);"></div>
+      <div class="card-body">
+        <p class="card-date">2026.03.21</p>
+        <h3 class="card-title">多言語で届ける日本文学。翻訳家が挑む「文化の架け橋」</h3>
+        <p class="card-excerpt">日本文学を5言語に翻訳し世界に届ける翻訳家。言語の壁を越え、日本の物語を世界の読者に届ける挑戦を語る。</p>
+        <div class="tags">
+          <span class="tag">#文学</span>
+          <span class="tag">#グローバル</span>
+        </div>
+      </div>
+    </a>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-logo">Guest Talk</p>
+      <ul class="footer-links">
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="#">プライバシーポリシー</a></li>
+        <li><a href="#">利用規約</a></li>
+        <li><a href="#">お問い合わせ</a></li>
+      </ul>
+      <p class="footer-copy">&copy; 2026 Guest Talk. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

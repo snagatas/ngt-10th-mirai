@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>音楽と福祉を結ぶ。障害者アートフェスを全国に広げるプロデューサー — ゲストトーク</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .article-hero {
+      position: relative;
+      height: 380px;
+      background: linear-gradient(135deg, #d4c6d8, #a88ab3);
+      display: flex;
+      align-items: flex-end;
+      overflow: hidden;
+    }
+    .article-hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.45) 0%, transparent 60%);
+    }
+    .article-hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      width: 100%;
+      padding: 40px 32px;
+      color: #fff;
+      animation: fadeInUp 0.7s ease;
+    }
+    .article-hero-date {
+      font-size: 0.78rem;
+      opacity: 0.8;
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+    .article-hero h1 {
+      font-family: var(--font-serif);
+      font-size: 1.75rem;
+      font-weight: 700;
+      line-height: 1.6;
+      max-width: 680px;
+    }
+    .article-hero .tags {
+      margin-top: 14px;
+    }
+    .article-hero .tag {
+      background: rgba(255,255,255,0.18);
+      color: rgba(255,255,255,0.9);
+    }
+    .article-body {
+      max-width: var(--max-width-article);
+      margin: 0 auto;
+      padding: 48px 32px 64px;
+    }
+    .article-lead {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      line-height: 2;
+      color: var(--color-text);
+      margin-bottom: 48px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .section-heading {
+      font-family: var(--font-serif);
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--color-text);
+      margin: 48px 0 24px;
+      padding-left: 16px;
+      border-left: 3px solid var(--color-accent);
+      line-height: 1.6;
+    }
+    .interview-block {
+      margin-bottom: 36px;
+    }
+    .interview-q {
+      font-weight: 600;
+      font-size: 0.92rem;
+      color: var(--color-accent);
+      margin-bottom: 12px;
+      padding-left: 20px;
+      position: relative;
+      line-height: 1.7;
+    }
+    .interview-q::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--color-accent);
+    }
+    .interview-a {
+      font-size: 0.92rem;
+      line-height: 2;
+      color: var(--color-text);
+      margin-bottom: 8px;
+    }
+    .img-placeholder {
+      width: 100%;
+      height: 280px;
+      background: linear-gradient(135deg, #d4c6d8, #a88ab3);
+      border-radius: 6px;
+      margin: 36px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,0.6);
+      font-size: 0.82rem;
+      font-weight: 500;
+    }
+    .profile-box {
+      background: var(--color-tag-bg);
+      border-radius: 8px;
+      padding: 28px 32px;
+      margin-top: 56px;
+    }
+    .profile-box h3 {
+      font-family: var(--font-serif);
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--color-text-secondary);
+      margin-bottom: 12px;
+      letter-spacing: 0.08em;
+    }
+    .profile-name {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .profile-desc {
+      font-size: 0.84rem;
+      line-height: 1.85;
+      color: var(--color-text-secondary);
+    }
+    .article-nav {
+      max-width: var(--max-width-article);
+      margin: 0 auto;
+      padding: 0 32px 48px;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .article-nav a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--color-accent);
+      padding: 10px 20px;
+      border: 1px solid var(--color-border);
+      border-radius: 6px;
+      transition: background var(--transition), border-color var(--transition);
+    }
+    .article-nav a:hover {
+      background: var(--color-accent-light);
+      border-color: var(--color-accent);
+    }
+    @media (max-width: 768px) {
+      .article-hero { height: 300px; }
+      .article-hero h1 { font-size: 1.3rem; }
+      .article-hero-content { padding: 28px 16px; }
+      .article-body { padding: 32px 16px 48px; }
+      .article-nav { padding: 0 16px 32px; flex-direction: column; }
+      .img-placeholder { height: 180px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">Guest Talk <span>挑戦する人たちの声</span></a>
+      <ul class="header-nav">
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="#">カテゴリ</a></li>
+        <li><a href="#">タグ一覧</a></li>
+        <li><a href="#">お問い合わせ</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <nav class="breadcrumb">
+    <a href="index.html">ホーム</a><span>/</span>
+    <a href="index.html">ゲストトーク</a><span>/</span>
+    <span>音楽と福祉を結ぶ。障害者アートフェスを全…</span>
+  </nav>
+
+  <section class="article-hero">
+    <div class="article-hero-overlay"></div>
+    <div class="article-hero-content">
+      <p class="article-hero-date">2026.03.11</p>
+      <h1>音楽と福祉を結ぶ。障害者アートフェスを全国に広げるプロデューサー</h1>
+      <div class="tags">
+        <span class="tag">#福祉</span>
+        <span class="tag">#アート</span>
+      </div>
+    </div>
+  </section>
+
+  <article class="article-body">
+    <p class="article-lead">音楽業界出身のプロデューサー・鈴木大輔さんが、障害のあるアーティストの表現の場を全国に展開する挑戦。</p>
+
+    <h2 class="section-heading">活動について</h2>
+
+    <div class="interview-block">
+      <p class="interview-q">音楽業界から福祉の世界へ。何があったのですか？</p>
+      <p class="interview-a">きっかけは、知人に誘われて行った障害者アート展でした。そこで出会った作品に衝撃を受けたんです。商業的なフィルターを通さない、純粋な表現の力。「これをもっと多くの人に届けたい」と思いました。音楽プロデューサーとして培った企画力や発信力が活かせるフィールドだと確信し、転身を決意しました。</p>
+    </div>
+
+    <div class="img-placeholder">写真が入ります</div>
+
+    <h2 class="section-heading">きっかけと原動力</h2>
+
+    <div class="interview-block">
+      <p class="interview-q">Art for Allのイベントの特徴は？</p>
+      <p class="interview-a">最大の特徴は、「鑑賞」だけで終わらせないこと。来場者がアーティストと一緒に作品を作るワークショップや、音楽とアートを融合したライブパフォーマンスを企画しています。障害のある人とない人が一緒に創作する体験を通じて、「違い」ではなく「一緒にできること」に目を向けてもらいたいんです。</p>
+    </div>
+
+    <div class="img-placeholder">写真が入ります</div>
+
+    <h2 class="section-heading">未来へのビジョン</h2>
+
+    <div class="interview-block">
+      <p class="interview-q">活動を通じて感じている手応えは？</p>
+      <p class="interview-a">イベントに来た方が、次は友達を連れて来てくれる。その連鎖が少しずつ広がっています。「福祉のイベント」ではなく「面白いイベント」として認知されてきた実感があります。来年は海外のアートフェスティバルとも連携し、日本の障害者アートを世界に発信する計画を進めています。</p>
+    </div>
+
+    <div class="profile-box">
+      <h3>プロフィール</h3>
+      <p class="profile-name">鈴木 大輔（すずき・だいすけ）</p>
+      <p class="profile-desc">1988年生まれ。大手レコード会社で音楽プロデューサーとして活動後、2022年に一般社団法人「Art for All」を設立。障害のあるアーティストの作品展示・パフォーマンスイベントを全国で開催。累計動員数は10万人を超える。</p>
+    </div>
+  </article>
+
+  <nav class="article-nav">
+    <a href="article05.html">← 前の記事</a>
+    <a href="index.html">← 一覧に戻る</a>
+    <a href="article07.html">次の記事 →</a>
+  </nav>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-logo">Guest Talk</p>
+      <ul class="footer-links">
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="#">プライバシーポリシー</a></li>
+        <li><a href="#">利用規約</a></li>
+        <li><a href="#">お問い合わせ</a></li>
+      </ul>
+      <p class="footer-copy">&copy; 2026 Guest Talk. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

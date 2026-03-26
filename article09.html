@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>子どもの「やりたい」を守る。フリースクール代表が考える教育の形 — ゲストトーク</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .article-hero {
+      position: relative;
+      height: 380px;
+      background: linear-gradient(135deg, #d8cec6, #b3a18a);
+      display: flex;
+      align-items: flex-end;
+      overflow: hidden;
+    }
+    .article-hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.45) 0%, transparent 60%);
+    }
+    .article-hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      width: 100%;
+      padding: 40px 32px;
+      color: #fff;
+      animation: fadeInUp 0.7s ease;
+    }
+    .article-hero-date {
+      font-size: 0.78rem;
+      opacity: 0.8;
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+    .article-hero h1 {
+      font-family: var(--font-serif);
+      font-size: 1.75rem;
+      font-weight: 700;
+      line-height: 1.6;
+      max-width: 680px;
+    }
+    .article-hero .tags {
+      margin-top: 14px;
+    }
+    .article-hero .tag {
+      background: rgba(255,255,255,0.18);
+      color: rgba(255,255,255,0.9);
+    }
+    .article-body {
+      max-width: var(--max-width-article);
+      margin: 0 auto;
+      padding: 48px 32px 64px;
+    }
+    .article-lead {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      line-height: 2;
+      color: var(--color-text);
+      margin-bottom: 48px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .section-heading {
+      font-family: var(--font-serif);
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--color-text);
+      margin: 48px 0 24px;
+      padding-left: 16px;
+      border-left: 3px solid var(--color-accent);
+      line-height: 1.6;
+    }
+    .interview-block {
+      margin-bottom: 36px;
+    }
+    .interview-q {
+      font-weight: 600;
+      font-size: 0.92rem;
+      color: var(--color-accent);
+      margin-bottom: 12px;
+      padding-left: 20px;
+      position: relative;
+      line-height: 1.7;
+    }
+    .interview-q::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--color-accent);
+    }
+    .interview-a {
+      font-size: 0.92rem;
+      line-height: 2;
+      color: var(--color-text);
+      margin-bottom: 8px;
+    }
+    .img-placeholder {
+      width: 100%;
+      height: 280px;
+      background: linear-gradient(135deg, #d8cec6, #b3a18a);
+      border-radius: 6px;
+      margin: 36px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,0.6);
+      font-size: 0.82rem;
+      font-weight: 500;
+    }
+    .profile-box {
+      background: var(--color-tag-bg);
+      border-radius: 8px;
+      padding: 28px 32px;
+      margin-top: 56px;
+    }
+    .profile-box h3 {
+      font-family: var(--font-serif);
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--color-text-secondary);
+      margin-bottom: 12px;
+      letter-spacing: 0.08em;
+    }
+    .profile-name {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .profile-desc {
+      font-size: 0.84rem;
+      line-height: 1.85;
+      color: var(--color-text-secondary);
+    }
+    .article-nav {
+      max-width: var(--max-width-article);
+      margin: 0 auto;
+      padding: 0 32px 48px;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .article-nav a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--color-accent);
+      padding: 10px 20px;
+      border: 1px solid var(--color-border);
+      border-radius: 6px;
+      transition: background var(--transition), border-color var(--transition);
+    }
+    .article-nav a:hover {
+      background: var(--color-accent-light);
+      border-color: var(--color-accent);
+    }
+    @media (max-width: 768px) {
+      .article-hero { height: 300px; }
+      .article-hero h1 { font-size: 1.3rem; }
+      .article-hero-content { padding: 28px 16px; }
+      .article-body { padding: 32px 16px 48px; }
+      .article-nav { padding: 0 16px 32px; flex-direction: column; }
+      .img-placeholder { height: 180px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">Guest Talk <span>挑戦する人たちの声</span></a>
+      <ul class="header-nav">
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="#">カテゴリ</a></li>
+        <li><a href="#">タグ一覧</a></li>
+        <li><a href="#">お問い合わせ</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <nav class="breadcrumb">
+    <a href="index.html">ホーム</a><span>/</span>
+    <a href="index.html">ゲストトーク</a><span>/</span>
+    <span>子どもの「やりたい」を守る。フリースクー…</span>
+  </nav>
+
+  <section class="article-hero">
+    <div class="article-hero-overlay"></div>
+    <div class="article-hero-content">
+      <p class="article-hero-date">2026.03.17</p>
+      <h1>子どもの「やりたい」を守る。フリースクール代表が考える教育の形</h1>
+      <div class="tags">
+        <span class="tag">#教育</span>
+        <span class="tag">#子ども</span>
+      </div>
+    </div>
+  </section>
+
+  <article class="article-body">
+    <p class="article-lead">不登校を経験した自身の過去を原点に、子どもが自分のペースで学べるフリースクールを運営する代表・渡辺健太さん。</p>
+
+    <h2 class="section-heading">活動について</h2>
+
+    <div class="interview-block">
+      <p class="interview-q">フリースクールを始めた理由を教えてください。</p>
+      <p class="interview-a">自分自身の経験が大きいです。中学時代、学校に行けなくなった時、「怠けている」と言われ続けました。でも本当は、学校という環境が自分に合っていなかっただけ。同じように苦しんでいる子どもたちに、「ここにいていいんだよ」と言える場所を作りたかったんです。</p>
+    </div>
+
+    <div class="img-placeholder">写真が入ります</div>
+
+    <h2 class="section-heading">きっかけと原動力</h2>
+
+    <div class="interview-block">
+      <p class="interview-q">「そらいろ教室」ではどのような学びの場を提供していますか？</p>
+      <p class="interview-a">一番のルールは「強制しない」こと。時間割はありますが、何に参加するかは子ども自身が決めます。プログラミング、料理、アート、音楽、読書——好きなことを入口にして、そこから自然に学びが広がっていく設計になっています。実際に、料理から分数を学んだ子もいるし、ゲーム作りからプログラミングの基礎を身につけた子もいます。</p>
+    </div>
+
+    <div class="img-placeholder">写真が入ります</div>
+
+    <h2 class="section-heading">未来へのビジョン</h2>
+
+    <div class="interview-block">
+      <p class="interview-q">教育のあり方について、どんな思いを持っていますか？</p>
+      <p class="interview-a">「学ぶ場所は学校だけじゃない」ということを、もっと多くの人に知ってほしいです。学校が合う子もいれば合わない子もいる。それは優劣ではなく、ただの「違い」です。子ども一人ひとりの「やりたい」という気持ちを大切にし、それぞれに合った学びの形を提供できる社会になれば、もっと多くの子どもが自分らしく成長できるはずです。</p>
+    </div>
+
+    <div class="profile-box">
+      <h3>プロフィール</h3>
+      <p class="profile-name">渡辺 健太（わたなべ・けんた）</p>
+      <p class="profile-desc">1994年生まれ。中学2年から不登校を経験。高校卒業認定試験を経て大学に進学後、教育学を学ぶ。2021年に東京都内にフリースクール「そらいろ教室」を開校。現在は3拠点で約60名の子どもたちが通う。</p>
+    </div>
+  </article>
+
+  <nav class="article-nav">
+    <a href="article08.html">← 前の記事</a>
+    <a href="index.html">← 一覧に戻る</a>
+    <a href="article10.html">次の記事 →</a>
+  </nav>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-logo">Guest Talk</p>
+      <ul class="footer-links">
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="#">プライバシーポリシー</a></li>
+        <li><a href="#">利用規約</a></li>
+        <li><a href="#">お問い合わせ</a></li>
+      </ul>
+      <p class="footer-copy">&copy; 2026 Guest Talk. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

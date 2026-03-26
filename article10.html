@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>海洋プラスチックから製品を。サーファー起業家の環境ビジネス — ゲストトーク</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .article-hero {
+      position: relative;
+      height: 380px;
+      background: linear-gradient(135deg, #c6d8ce, #8ab3a0);
+      display: flex;
+      align-items: flex-end;
+      overflow: hidden;
+    }
+    .article-hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.45) 0%, transparent 60%);
+    }
+    .article-hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      width: 100%;
+      padding: 40px 32px;
+      color: #fff;
+      animation: fadeInUp 0.7s ease;
+    }
+    .article-hero-date {
+      font-size: 0.78rem;
+      opacity: 0.8;
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+    .article-hero h1 {
+      font-family: var(--font-serif);
+      font-size: 1.75rem;
+      font-weight: 700;
+      line-height: 1.6;
+      max-width: 680px;
+    }
+    .article-hero .tags {
+      margin-top: 14px;
+    }
+    .article-hero .tag {
+      background: rgba(255,255,255,0.18);
+      color: rgba(255,255,255,0.9);
+    }
+    .article-body {
+      max-width: var(--max-width-article);
+      margin: 0 auto;
+      padding: 48px 32px 64px;
+    }
+    .article-lead {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      line-height: 2;
+      color: var(--color-text);
+      margin-bottom: 48px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .section-heading {
+      font-family: var(--font-serif);
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--color-text);
+      margin: 48px 0 24px;
+      padding-left: 16px;
+      border-left: 3px solid var(--color-accent);
+      line-height: 1.6;
+    }
+    .interview-block {
+      margin-bottom: 36px;
+    }
+    .interview-q {
+      font-weight: 600;
+      font-size: 0.92rem;
+      color: var(--color-accent);
+      margin-bottom: 12px;
+      padding-left: 20px;
+      position: relative;
+      line-height: 1.7;
+    }
+    .interview-q::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--color-accent);
+    }
+    .interview-a {
+      font-size: 0.92rem;
+      line-height: 2;
+      color: var(--color-text);
+      margin-bottom: 8px;
+    }
+    .img-placeholder {
+      width: 100%;
+      height: 280px;
+      background: linear-gradient(135deg, #c6d8ce, #8ab3a0);
+      border-radius: 6px;
+      margin: 36px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,0.6);
+      font-size: 0.82rem;
+      font-weight: 500;
+    }
+    .profile-box {
+      background: var(--color-tag-bg);
+      border-radius: 8px;
+      padding: 28px 32px;
+      margin-top: 56px;
+    }
+    .profile-box h3 {
+      font-family: var(--font-serif);
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--color-text-secondary);
+      margin-bottom: 12px;
+      letter-spacing: 0.08em;
+    }
+    .profile-name {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .profile-desc {
+      font-size: 0.84rem;
+      line-height: 1.85;
+      color: var(--color-text-secondary);
+    }
+    .article-nav {
+      max-width: var(--max-width-article);
+      margin: 0 auto;
+      padding: 0 32px 48px;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .article-nav a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--color-accent);
+      padding: 10px 20px;
+      border: 1px solid var(--color-border);
+      border-radius: 6px;
+      transition: background var(--transition), border-color var(--transition);
+    }
+    .article-nav a:hover {
+      background: var(--color-accent-light);
+      border-color: var(--color-accent);
+    }
+    @media (max-width: 768px) {
+      .article-hero { height: 300px; }
+      .article-hero h1 { font-size: 1.3rem; }
+      .article-hero-content { padding: 28px 16px; }
+      .article-body { padding: 32px 16px 48px; }
+      .article-nav { padding: 0 16px 32px; flex-direction: column; }
+      .img-placeholder { height: 180px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">Guest Talk <span>挑戦する人たちの声</span></a>
+      <ul class="header-nav">
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="#">カテゴリ</a></li>
+        <li><a href="#">タグ一覧</a></li>
+        <li><a href="#">お問い合わせ</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <nav class="breadcrumb">
+    <a href="index.html">ホーム</a><span>/</span>
+    <a href="index.html">ゲストトーク</a><span>/</span>
+    <span>海洋プラスチックから製品を。サーファー起…</span>
+  </nav>
+
+  <section class="article-hero">
+    <div class="article-hero-overlay"></div>
+    <div class="article-hero-content">
+      <p class="article-hero-date">2026.03.19</p>
+      <h1>海洋プラスチックから製品を。サーファー起業家の環境ビジネス</h1>
+      <div class="tags">
+        <span class="tag">#環境</span>
+        <span class="tag">#起業</span>
+      </div>
+    </div>
+  </section>
+
+  <article class="article-body">
+    <p class="article-lead">サーフィンを愛するなかで海洋汚染の深刻さを知り、回収プラスチックを原料としたブランドを立ち上げた起業家・木村翼さん。</p>
+
+    <h2 class="section-heading">活動について</h2>
+
+    <div class="interview-block">
+      <p class="interview-q">海洋プラスチック問題に関心を持ったきっかけは？</p>
+      <p class="interview-a">大学2年の時、宮崎県でサーフィンをしていた時のことです。波から上がったら、ビーチにペットボトルやプラスチック片が大量に漂着していて。よく見ると、中国語や韓国語のラベルが貼られたものもある。海はつながっている。一つの国だけで解決できる問題じゃないんだと痛感しました。それ以来、サーフィンに行くたびにゴミを拾うようになりました。</p>
+    </div>
+
+    <div class="img-placeholder">写真が入ります</div>
+
+    <h2 class="section-heading">きっかけと原動力</h2>
+
+    <div class="interview-block">
+      <p class="interview-q">OceanLoopの製品はどのように作られていますか？</p>
+      <p class="interview-a">ビーチクリーン活動で回収したプラスチックを洗浄・分別・粉砕し、再生ペレットにします。それを金型に流し込んで、サングラスのフレームやスマホケースに成形しています。一つのサングラスに使われる再生プラスチックは約30g。ペットボトル約2本分に相当します。「海のゴミが身につけるアイテムに変わる」というストーリーが、お客さまにも共感いただいています。</p>
+    </div>
+
+    <div class="img-placeholder">写真が入ります</div>
+
+    <h2 class="section-heading">未来へのビジョン</h2>
+
+    <div class="interview-block">
+      <p class="interview-q">今後のビジョンを教えてください。</p>
+      <p class="interview-a">5年以内に、日本の全海岸線にビーチクリーンの拠点を置きたいです。そして回収したプラスチックを地域の工場で製品化する、地産地消の循環モデルを確立したい。プラスチック問題は、「使わない」だけでは解決しません。「使ったものを資源に戻す」仕組みを社会に実装していくことが重要だと考えています。</p>
+    </div>
+
+    <div class="profile-box">
+      <h3>プロフィール</h3>
+      <p class="profile-name">木村 翼（きむら・つばさ）</p>
+      <p class="profile-desc">1997年生まれ。大学時代にサーフィンを始め、海洋プラスチック問題に衝撃を受ける。卒業後、海洋プラスチックを回収・再生し、サングラスやスマホケースを製造する「OceanLoop」を設立。ビーチクリーン活動も全国で展開中。</p>
+    </div>
+  </article>
+
+  <nav class="article-nav">
+    <a href="article09.html">← 前の記事</a>
+    <a href="index.html">← 一覧に戻る</a>
+    <a href="article11.html">次の記事 →</a>
+  </nav>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-logo">Guest Talk</p>
+      <ul class="footer-links">
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="#">プライバシーポリシー</a></li>
+        <li><a href="#">利用規約</a></li>
+        <li><a href="#">お問い合わせ</a></li>
+      </ul>
+      <p class="footer-copy">&copy; 2026 Guest Talk. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
