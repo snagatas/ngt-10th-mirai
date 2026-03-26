@@ -13,7 +13,7 @@
     return hash;
   }
 
-  var CORRECT_HASH = -1268498008; // djb2("ngt2026")
+  var CORRECT_HASH = 265840984; // djb2("ngt2026")
 
   // Already authenticated this session?
   if (sessionStorage.getItem("gt_auth") === "ok") return;
